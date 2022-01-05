@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Ahorcado</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <h1 class="item-1">Juego Del Ahorcado</h1>
+      <h3 class="item-2">Introdusca una letra</h3>
+      <input class="item-3" type="text" id="letra" maxlength="1" /><button
+        class="item-4"
+        id="calcular"
+      >
+        Evaluar Letra
+      </button>
+      <p id="output" class="item-5"></p>
+      <div class="item-6" id="ahorcado"></div>
+      <div id="ganador">
+        <p>Victoria</p>
+        <p>Felicidades, Te Ganaste Un Coscorron</p>
+        <input type="button" value="Actualizar" onclick="location.reload()" />
+      </div>
+      <div id="perdiste">
+        <p>Perdiste</p>
+        <p>Eres Un Pendejo</p>
+        <input type="button" value="Actualizar" onclick="location.reload()" />
+      </div>
+    </div>
+    <script src="./js/juego.js"></script>
+  </body>
+</html>
